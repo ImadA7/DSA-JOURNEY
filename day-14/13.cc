@@ -1,4 +1,4 @@
-#include<iostream>   //valid anagram
+#include<iostream>   //valid anagram (leetcode 242)
 #include<string>
 bool isanagram(string str1, string str2) {
     if(str1.length() != str2.length()) {

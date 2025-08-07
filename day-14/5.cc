@@ -1,4 +1,5 @@
 #include<iostream>  //reverse a char array
+#include<cstring>
 using namespace std;
 
 void reverse(char word[], int n) {

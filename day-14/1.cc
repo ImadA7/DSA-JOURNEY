@@ -6,7 +6,6 @@ int main()  {
     cout<<pos<<endl;
  
 
-        
 
     return 0;
 }

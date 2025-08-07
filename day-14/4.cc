@@ -1,4 +1,5 @@
 #include<iostream>  //convert to uppercase
+#include<cstring>
 using namespace std;
 
 void toupper(char word[], int n) {

@@ -1,9 +1,11 @@
 #include<iostream>
+#include<cstring>
 using namespace std;
+
 int main(){
-    char arr[5]={'a', 'b', 'c','d','e'};
-    cout<<arr<<endl;
-    char arr2[5]={'c', 'o','d','e','\0'};
-    cout<<arr2<<endl;
+    string babu = "imad";
+    cout<<babu;
+    cout<<babu[1];
+   
     return 0;
 }

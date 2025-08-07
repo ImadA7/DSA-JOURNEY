@@ -1,4 +1,5 @@
 #include<iostream>   //valid plindrome
+#include<cstring>
 using namespace std;
 
 bool ispalindrome(char str[], int n)  {  //str ki jagah "work" nhi ayega??
