@@ -1,4 +1,6 @@
-//Create a User class with properties: id (private), username(public) & password (private). Its id should be initialized in a parameterised constructor.
+//Create a User class with properties: id (private), username(public) &
+// password (private). Its id should be initialized in a parameterised 
+//constructor.
 
 //It should have a Getter & Setter for password.
 #include<iostream>

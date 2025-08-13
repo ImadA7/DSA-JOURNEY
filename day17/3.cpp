@@ -1,4 +1,4 @@
-#include<iostream> //constructors are usd for initiisation
+#include<iostream> //constructors are use for initiisation
 using namespace std;
 
 class car{

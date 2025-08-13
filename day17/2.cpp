@@ -1,4 +1,4 @@
-#include<iostream> 
+#include<iostream>  //setters and getters
 using namespace std;
 
 class Student {
@@ -36,8 +36,5 @@ int main() {
     s1.setcgpa(9.0);
     cout<<s1.getname()<<endl;
     cout<<s1.getcgpa()<<endl;  
-
-    
-
     return 0;
 }
