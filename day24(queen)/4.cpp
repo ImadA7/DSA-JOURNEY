@@ -47,33 +47,33 @@ bool issafe(vector<vector<char>> board, int row, int col) {
 
 }
 
-void nqueens(vector<vector<char>> board, int row) {
-    int n=board.size();
-    if(row==n){
-        printboard(board);
-        return;
-    }
-    for(int j=0;j<n;j++) {
-        if(issafe(board,row,j)) {
-            board[row][j]='Q';
-            nqueens(board,row+1);
-            board[row][j]='.';
-
+    void nqueens(vector<vector<char>> board, int row) {
+        int n=board.size();
+        if(row==n){
+            printboard(board);
+            return;
         }
-        
+        for(int j=0;j<n;j++) {
+            if(issafe(board,row,j)) {
+                board[row][j]='Q';
+                nqueens(board,row+1);
+                board[row][j]='.';
+
+            }
+            
+        }
     }
-}
 
 int main() {
     vector<vector<char>> board;  //creating board
     int n=4;
 
-    for(int i=0; i<n;i++) {
+    for(int i=0; i<n;i++) {//Outer loop (i) runs n times → creates each row.
         vector<char>newrow;
-        for(int j=0;j<n;j++) {
-            newrow.push_back('.');
+        for(int j=0;j<n;j++) { //Inner loop (j) runs n times → fills that row with '.'.
+            newrow.push_back('.');   // fill row with '.' (empty cells)
         }
-        board.push_back(newrow);
+        board.push_back(newrow);  // add the row to the board
     }
 
     nqueens(board,0);

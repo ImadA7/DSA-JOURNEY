@@ -2,7 +2,6 @@
 using namespace std;//return the area of the largest rectangle in the histogram
 #include<vector>
 #include<stack>
-
  
 int maxareahistogram(vector<int> height) {
     vector<int> nsl;
@@ -45,7 +44,7 @@ int maxareahistogram(vector<int> height) {
         }
 
     }
-}  
+}
  
 
 

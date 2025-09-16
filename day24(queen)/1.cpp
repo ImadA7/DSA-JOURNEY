@@ -2,7 +2,10 @@
 using namespace std;
 
 void printarr(int arr[], int n) {
-    for(int i=0)
+    for(int i=0; i<n; i++) {   // ✅ fixed loop condition
+        cout << arr[i] << " ";
+    }
+    cout << endl;
 }
 
 void changearr(int arr[], int n, int i) {
@@ -19,8 +22,6 @@ int main() {
     int arr[5]={0};
     int n=5;
     changearr(arr,n,0);
-
-
 
     return 0;
 }

@@ -3,7 +3,7 @@ using namespace std;
  
 void printsubset(string str, string subset){
     if(str.size()==0) {
-        cout<<subset<<"\n";
+        cout<<subset<<"\n"; 
         return;
     }
     char ch=str[0];

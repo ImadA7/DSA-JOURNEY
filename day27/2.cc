@@ -19,10 +19,10 @@ public:
     }
 
     T top() {
-        // if (isEmpty()) {
-        //     cout << "stack is empty\n";
-        //     return -1; // return a sentinel value
-        // }
+        if (isEmpty()) {
+            cout << "stack is empty\n";
+            return -1; // return a sentinel value
+        }
         int lastidx = vec.size() - 1;
         return vec[lastidx];
     }
