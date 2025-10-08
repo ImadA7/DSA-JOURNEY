@@ -3,19 +3,6 @@
 #include<algorithm> // needed for sort
 using namespace std;
 
-int maxActivities(vector<int> start, vector<int> end){
-    int count = 1;
-    int currEndTime = end[0];
-
-    for(int i = 1; i < start.size(); i++){ // fixed <= to <
-        if(start[i] >= currEndTime){ // non-overlapping
-            count++;
-            currEndTime = end[i];
-        }
-    }
-    return count;
-}
-
 bool compare(pair<int,int> p1, pair<int,int> p2){
     return p1.second < p2.second; // ascending endtime
 }
@@ -35,7 +22,7 @@ int main(){
 
     sort(activity.begin(), activity.end(), compare);
 
-    cout << "sorteddddddddddddddddddd" << endl;
+    cout << "---------sorted-----------" << endl;
     for(int i=0;i<activity.size();i++){
         cout << activity[i].first << "," << activity[i].second << endl;
     }
